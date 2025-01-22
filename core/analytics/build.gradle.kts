@@ -14,7 +14,7 @@ plugins {
 }
 
 android {
-    namespace = "com.sensei.order.billing"
+    namespace = "org.mifos.core.analytics"
 }
 
 kotlin {

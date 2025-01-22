@@ -14,7 +14,7 @@ plugins {
 }
 
 android {
-    namespace = "com.sensei.order.billing"
+    namespace = "org.mifos.core.ui"
 }
 
 kotlin {
@@ -51,5 +51,5 @@ kotlin {
 compose.resources {
     publicResClass = true
     generateResClass = always
-    packageOfResClass = "com.sensei.order.billing.core.ui.generated.resources"
+    packageOfResClass = "org.mifos.core.ui.generated.resources"
 }
