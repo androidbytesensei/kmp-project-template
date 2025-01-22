@@ -10,8 +10,8 @@
 package cmp.navigation.di
 
 import org.koin.dsl.module
-import org.mifos.core.common.di.DispatchersModule
-import org.mifos.core.data.di.DataModule
+import com.sensei.order.billing.core.common.di.DispatchersModule
+import com.sensei.order.billing.core.data.di.DataModule
 
 object KoinModules {
     private val dataModule = module {

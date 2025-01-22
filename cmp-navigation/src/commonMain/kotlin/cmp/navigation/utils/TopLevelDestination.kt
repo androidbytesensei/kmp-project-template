@@ -15,7 +15,7 @@ import cmp.navigation.generated.resources.app_name
 import cmp.navigation.generated.resources.home
 import cmp.navigation.generated.resources.profile
 import org.jetbrains.compose.resources.StringResource
-import org.mifos.core.designsystem.icon.AppIcons
+import com.sensei.order.billing.core.designsystem.icon.AppIcons
 
 /**
  * Type for the top level destinations in the application. Each of these destinations

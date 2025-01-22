@@ -13,11 +13,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
-import org.mifos.feature.home.HOME_ROUTE
-import org.mifos.feature.home.homeScreen
-import org.mifos.feature.profile.profileScreen
-import org.mifos.feature.settings.notificationScreen
-import org.mifos.feature.settings.settingsScreen
+import com.sensei.order.billing.feature.home.HOME_ROUTE
+import com.sensei.order.billing.feature.home.homeScreen
+import com.sensei.order.billing.feature.profile.profileScreen
+import com.sensei.order.billing.feature.settings.notificationScreen
+import com.sensei.order.billing.feature.settings.settingsScreen
 
 @Composable
 internal fun FeatureNavHost(

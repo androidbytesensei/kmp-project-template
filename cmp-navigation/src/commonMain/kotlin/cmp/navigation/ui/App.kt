@@ -52,15 +52,15 @@ import cmp.navigation.generated.resources.not_connected
 import cmp.navigation.navigation.FeatureNavHost
 import cmp.navigation.utils.TopLevelDestination
 import org.jetbrains.compose.resources.stringResource
-import org.mifos.core.data.utils.NetworkMonitor
-import org.mifos.core.data.utils.TimeZoneMonitor
-import org.mifos.core.designsystem.component.MifosNavigationBar
-import org.mifos.core.designsystem.component.MifosNavigationBarItem
-import org.mifos.core.designsystem.component.MifosNavigationRail
-import org.mifos.core.designsystem.component.MifosNavigationRailItem
-import org.mifos.core.designsystem.icon.AppIcons
-import org.mifos.feature.settings.navigateToNotification
-import org.mifos.feature.settings.navigateToSettings
+import com.sensei.order.billing.core.data.utils.NetworkMonitor
+import com.sensei.order.billing.core.data.utils.TimeZoneMonitor
+import com.sensei.order.billing.core.designsystem.component.SuperOrderBillingNavigationBar
+import com.sensei.order.billing.core.designsystem.component.SuperOrderBillingNavigationBarItem
+import com.sensei.order.billing.core.designsystem.component.SuperOrderBillingNavigationRail
+import com.sensei.order.billing.core.designsystem.component.SuperOrderBillingNavigationRailItem
+import com.sensei.order.billing.core.designsystem.icon.AppIcons
+import com.sensei.order.billing.feature.settings.navigateToNotification
+import com.sensei.order.billing.feature.settings.navigateToSettings
 
 @Composable
 internal fun App(
@@ -208,7 +208,7 @@ private fun AppBar(
         colors = TopAppBarDefaults.topAppBarColors(
             containerColor = Color.Transparent,
         ),
-        modifier = modifier.testTag("mifosTopAppBar"),
+        modifier = modifier.testTag("superorderbillingTopAppBar"),
     )
 }
 
@@ -220,11 +220,11 @@ private fun NavRail(
     currentDestination: NavDestination?,
     modifier: Modifier = Modifier,
 ) {
-    MifosNavigationRail(modifier = modifier) {
+    SuperOrderBillingNavigationRail(modifier = modifier) {
         destinations.forEach { destination ->
             val selected = currentDestination.isTopLevelDestinationInHierarchy(destination)
             val hasUnread = destinationsWithUnreadResources.contains(destination)
-            MifosNavigationRailItem(
+            SuperOrderBillingNavigationRailItem(
                 selected = selected,
                 onClick = { onNavigateToDestination(destination) },
                 icon = {
@@ -254,13 +254,13 @@ private fun BottomBar(
     currentDestination: NavDestination?,
     modifier: Modifier = Modifier,
 ) {
-    MifosNavigationBar(
+    SuperOrderBillingNavigationBar(
         modifier = modifier,
     ) {
         destinations.forEach { destination ->
             val hasUnread = destinationsWithUnreadResources.contains(destination)
             val selected = currentDestination.isTopLevelDestinationInHierarchy(destination)
-            MifosNavigationBarItem(
+            SuperOrderBillingNavigationBarItem(
                 selected = selected,
                 onClick = { onNavigateToDestination(destination) },
                 icon = {

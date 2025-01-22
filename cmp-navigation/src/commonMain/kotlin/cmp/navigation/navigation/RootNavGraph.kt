@@ -16,8 +16,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import cmp.navigation.navigation.NavGraphRoute.MAIN_GRAPH
 import cmp.navigation.ui.App
-import org.mifos.core.data.utils.NetworkMonitor
-import org.mifos.core.data.utils.TimeZoneMonitor
+import com.sensei.order.billing.core.data.utils.NetworkMonitor
+import com.sensei.order.billing.core.data.utils.TimeZoneMonitor
 
 @Composable
 fun RootNavGraph(

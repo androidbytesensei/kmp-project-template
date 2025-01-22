@@ -14,7 +14,7 @@ plugins {
 }
 
 android {
-    namespace = "org.mifos.core.data"
+    namespace = "com.sensei.order.billing"
     testOptions {
         unitTests {
             isIncludeAndroidResources = true

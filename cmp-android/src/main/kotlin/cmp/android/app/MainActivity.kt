@@ -16,7 +16,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.WindowCompat
 import cmp.shared.SharedApp
-import org.mifos.core.ui.utils.ShareUtils
+import com.sensei.order.billing.core.ui.utils.ShareUtils
 
 /**
  * Main activity class.

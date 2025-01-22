@@ -14,9 +14,9 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import cmp.navigation.navigation.RootNavGraph
 import org.koin.compose.koinInject
-import org.mifos.core.data.utils.NetworkMonitor
-import org.mifos.core.data.utils.TimeZoneMonitor
-import org.mifos.core.designsystem.theme.MifosTheme
+import com.sensei.order.billing.core.data.utils.NetworkMonitor
+import com.sensei.order.billing.core.data.utils.TimeZoneMonitor
+import com.sensei.order.billing.core.designsystem.theme.SuperOrderBillingTheme
 
 @Composable
 fun ComposeApp(
@@ -24,7 +24,7 @@ fun ComposeApp(
     networkMonitor: NetworkMonitor = koinInject(),
     timeZoneMonitor: TimeZoneMonitor = koinInject(),
 ) {
-    MifosTheme {
+    SuperOrderBillingTheme {
         RootNavGraph(
             networkMonitor = networkMonitor,
             timeZoneMonitor = timeZoneMonitor,

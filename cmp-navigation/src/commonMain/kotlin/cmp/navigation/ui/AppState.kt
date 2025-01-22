@@ -30,12 +30,12 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.datetime.TimeZone
-import org.mifos.core.data.utils.NetworkMonitor
-import org.mifos.core.data.utils.TimeZoneMonitor
-import org.mifos.feature.home.HOME_ROUTE
-import org.mifos.feature.home.navigateToHome
-import org.mifos.feature.profile.PROFILE_ROUTE
-import org.mifos.feature.profile.navigateToProfile
+import com.sensei.order.billing.core.data.utils.NetworkMonitor
+import com.sensei.order.billing.core.data.utils.TimeZoneMonitor
+import com.sensei.order.billing.feature.home.HOME_ROUTE
+import com.sensei.order.billing.feature.home.navigateToHome
+import com.sensei.order.billing.feature.profile.PROFILE_ROUTE
+import com.sensei.order.billing.feature.profile.navigateToProfile
 
 @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
 @Composable

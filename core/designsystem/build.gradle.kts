@@ -17,7 +17,7 @@ android {
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-    namespace = "org.mifos.core.designsystem"
+    namespace = "com.sensei.order.billing"
 }
 
 kotlin {
@@ -52,5 +52,5 @@ kotlin {
 compose.resources {
     publicResClass = true
     generateResClass = always
-    packageOfResClass = "org.mifos.core.designsystem.generated.resources"
+    packageOfResClass = "com.sensei.order.billing.core.designsystem.generated.resources"
 }

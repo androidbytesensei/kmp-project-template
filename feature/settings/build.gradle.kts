@@ -13,7 +13,7 @@ plugins {
 }
 
 android {
-    namespace = "org.mifos.feature.settings"
+    namespace = "com.sensei.order.billing"
 }
 
 kotlin {

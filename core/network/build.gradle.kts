@@ -15,7 +15,7 @@ plugins {
 }
 
 android {
-    namespace = "org.mifos.core.network"
+    namespace = "com.sensei.order.billing"
     defaultConfig {
         consumerProguardFiles("consumer-rules.pro")
     }

@@ -31,7 +31,7 @@ extensions.configure<org.ajoberstar.reckon.gradle.ReckonExtension> {
     setTagWriter { it.toString() }
 }
 
-rootProject.name = "kmp-project-template"
+rootProject.name = "super-order-billing"
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
