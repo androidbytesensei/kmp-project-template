@@ -27,21 +27,12 @@ android {
 kotlin {
     sourceSets {
         commonMain.dependencies {
-            implementation(libs.multiplatform.settings)
-            implementation(libs.multiplatform.settings.serialization)
-            implementation(libs.multiplatform.settings.coroutines)
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.kotlinx.serialization.core)
             implementation(projects.core.model)
             implementation(projects.core.common)
-        }
 
-        commonTest.dependencies {
-            implementation(libs.multiplatform.settings.test)
-        }
-
-        desktopMain.dependencies {
-            implementation(libs.kotlinx.coroutines.swing)
+            api(projects.coreBase.datastore)
         }
     }
 }
